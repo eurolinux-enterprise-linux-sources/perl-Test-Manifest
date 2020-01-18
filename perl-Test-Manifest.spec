@@ -1,7 +1,7 @@
 Summary:        Test case module for Perl
 Name:           perl-Test-Manifest
 Version:        1.23
-Release:        1%{?dist}
+Release:        2%{?dist}
 License:        GPL+ or Artistic
 Group:          Development/Libraries
 URL:            http://search.cpan.org/dist/Test-Manifest/
@@ -64,6 +64,9 @@ rm -rf %{buildroot}
 %{_mandir}/man3/Test::Manifest.3pm*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.23-2
+- Mass rebuild 2013-12-27
+
 * Tue Jul 24 2012 Paul Howarth <paul@city-fan.org> - 1.23-1
 - Update to 0.23
   - Fix bug for missing file (should warn and skip, not pass to run_t_files)
